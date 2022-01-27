@@ -1,0 +1,18 @@
+# The id of the proficiency should match the id of the related thing.
+type: proficiency
+metadata:
+  id: armor-padded
+  name: Padded Armor
+specs: {}
+---
+type: proficiency
+metadata:
+  id: armor-leather
+  name: Leather Armor
+specs: {}
+---
+type: proficiency
+metadata:
+  id: armor-leather-studded
+  name: Studded Leather Armor
+specs: {}

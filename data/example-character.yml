@@ -1,0 +1,78 @@
+# This document is what is saved in the db for a character and what is used when generating
+# a character sheet and/or token.
+type: character
+metadata: # This data is for show and doesn't directly affect the rest of the sheet
+  id: uuid-lmao-69
+  name: Batman
+  notes: ""
+build: # This data is generated based on what is in spec (is always re-evaluated on import)
+  race: Eladrin
+  class: Rouge
+  level: 1
+  hit-points: 10
+spec:
+  experience: 0
+  inventory: {}
+  currency:
+    copper: 0
+    silver: 0
+    electrum: 0
+    gold: 0
+    platinum: 0
+  abilities:
+    strength: 9
+    dexterity: 20
+    constitution: 11
+    intelligence: 11
+    wisdom: 10
+    charisma: 13
+  assets:
+    - type: level
+      id: 1
+      assets:
+        - type: race
+          id: elf
+          assets:
+            - type: size
+              id: medium
+            - type: vision
+              id: darkvision
+            - type: language
+              id: common
+            - type: language
+              id: elvish
+            - type: sub-race
+              id: eladrin
+              assets:
+                - type: trait
+                  id: elf-weapon-training
+                  assets:
+                    - type: proficiency
+                      id: longsword
+                    - type: proficiency
+                      id: shortsword
+                    - type: proficiency
+                      id: shortbow
+                    - type: proficiency
+                      id: longbow
+                - type: trait
+                  id: fey-step
+                  assets:
+                    - type: spell
+                      id: misty-step
+        - type: class
+          id: fighter
+          level: 1
+          assets:
+            - type: hit-points
+              values: # Storage of hp gained per level of this class
+                - 10
+            - type: proficiency
+              id: armor-light
+              assets:
+                - type: proficiency
+                  id: armor-padded
+                - type: proficiency
+                  id: armor-leather
+                - type: proficiency
+                  id: armor-leather-studded

@@ -1,0 +1,75 @@
+type: class
+metadata:
+  id: fighter
+  name: Fighter
+  description: >
+    Lorem ipsum dolor sit amet.
+spec:
+  multiclass:
+    if:
+      ability: # conditions for numeric char vals are assumed to be min requirements
+        strength: 13
+        dexterity: 13
+  set:
+    hit-dice: d10
+  grant:
+    - type: proficiency
+      id: armor-light
+    - type: proficiency
+      id: armor-medium
+    - type: proficiency
+      id: armor-heavy
+      if:
+        $not: # If not multiclassed into fighter
+          multiclass: fighter
+    - type: proficiency
+      id: shield
+    - type: proficiency
+      id: weapon-simple
+    - type: proficiency
+      id: weapon-martial
+    - type: feature
+      id: fighting-style
+      if:
+        level: 1 # Assumes level of the class this rule is in
+        #fighter.level: 1 # The explicit version of the above rule
+    - type: feature
+      id: second-wind
+      if:
+        level: 1
+    - type: feature
+      id: action-surge
+      if:
+        level: 2
+    - type: feature
+      id: martial-archetype
+      if:
+        level: 3
+    - type: feature
+      id: ability-score-improvement
+      if:
+        level:
+          - 4
+          - 6
+          - 8
+          - 12
+          - 14
+          - 16
+          - 19
+    - type: feature
+      id: extra-attack
+      if:
+        level: 5
+  select:
+    - type: proficiency
+      name: Skill Proficiency
+      number: 2
+      id:
+        - skill-acrobatics
+        - skill-animal-handling
+        - skill-athletics
+        - skill-history
+        - skill-insight
+        - skill-intimidation
+        - skill-perception
+        - skill-survival

@@ -1,0 +1,26 @@
+type: proficiency
+metadata:
+  id: armor-light
+  name: Light Armor
+specs:
+  grant:
+    - type: proficiency
+      id: armor-padded
+    - type: proficiency
+      id: armor-leather
+    - type: proficiency
+      id: armor-leather-studded
+---
+type: proficiency
+metadata:
+  id: armor-medium
+  name: Medium Armor
+specs:
+  grant: [] # TODO
+---
+type: proficiency
+metadata:
+  id: armor-heavy
+  name: Heavy Armor
+specs:
+  grant: [] # TODO

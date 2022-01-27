@@ -1,0 +1,47 @@
+type: size
+metadata:
+  id: tiny
+  name: Tiny
+  description: >
+    Space: 2½' by 2½'
+specs: {}
+---
+type: size
+metadata:
+  id: small
+  name: Small
+  description: >
+    Space: 5' by 5'
+specs: {}
+---
+type: size
+metadata:
+  id: medium
+  name: Medium
+  description: >
+    Space: 5' by 5'
+specs: {}
+---
+type: size
+metadata:
+  id: large
+  name: Large
+  description: >
+    Space: 10' by 10'
+specs: {}
+---
+type: size
+metadata:
+  id: huge
+  name: Huge
+  description: >
+    Space: 15' by 15'
+specs: {}
+---
+type: size
+metadata:
+  id: gargantuan
+  name: Gargantuan
+  description: >
+    Space: 20' by 20' or larger
+specs: {}

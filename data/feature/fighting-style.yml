@@ -1,0 +1,45 @@
+type: feature
+metadata:
+  name: Fighting Style
+  id: fighting-style
+  description: >
+    Lorem ipsum dolor sit amet.
+spec:
+  options:
+    - metadata:
+        id: blind-fighting
+        name: Blind Fighting
+        description: >
+          You have blindsight with a range of 10 feet. Within that range,
+          you can effectiely see anything that isn't behind total cover,
+          even if you're blinded or in darkness. Moreover, you can see an
+          invisible creature within that range, unless the creature successfully hides from you.
+        source: TCE, page 41
+      if:
+        class:
+          - fighter
+          - paladin
+          - ranger
+      spec:
+        grant:
+          - type: vision
+            id: blindsight
+            range: 10ft
+    - metadata:
+        id: archery
+        name: Archery
+        description: >
+          You gain a +2 bonus to attack rolls you make with ranged weapons.
+        source: >
+          PHB, page 72.
+          Also found in PHB, page 91; UATRR, page 3.
+          Available in the SRD.
+      if:
+        class:
+          - fighter
+          - ranger
+      spec:
+        stat:
+          ranged.attack: 2
+          #ranged.attack: # explicit form of above, explicit form is required to include if:
+            #value: 2

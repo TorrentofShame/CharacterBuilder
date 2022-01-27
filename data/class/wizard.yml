@@ -1,0 +1,7 @@
+type: class
+metadata:
+  id: wizard
+  name: Wizard
+  description: >
+    Lorem ipsum dolor sit amet.
+spec: {}

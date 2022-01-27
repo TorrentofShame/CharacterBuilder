@@ -1,0 +1,11 @@
+type: language
+metadata:
+  id: common
+  name: Common
+specs: {}
+---
+type: language
+metadata:
+  id: elvish
+  name: Elvish
+specs: {}
