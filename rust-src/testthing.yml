@@ -1,0 +1,23 @@
+type: character
+metadata:
+  id: uuid-lmao-lol
+  name: foobar
+  notes: yall are sick
+spec:
+  abilities:
+    strength: 9
+    dexterity: 20
+    constitution: 11
+    intelligence: 11
+    wisdom: 10
+    charisma: 13
+  class:
+    id: fighter
+    level: 1
+    grants:
+      - type: asi
+        ability:
+          - strength
+  race:
+    id: elf
+    grants: []

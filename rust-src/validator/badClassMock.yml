@@ -1,0 +1,14 @@
+type: class
+metadata:
+  id: fighter
+  name: Fighter
+  description: >
+    Lorem ipsum dolor sit amet.
+spec:
+  abilities:
+    strength: 9
+    dexterity: 20
+    constitution: 11
+    intelligence: 11
+    wisdom: 10
+    charisma: 13

@@ -1,0 +1,38 @@
+image: node:alpine
+
+cache:
+  paths:
+    - node_modules
+
+before_script:
+  - npm ci
+
+stages:
+  - lint
+  - test
+  - deploy
+
+lint:
+  stage: lint
+  script:
+    - npm run lint:gl
+  needs: []
+
+test:
+  stage: test
+  script:
+    - npm run test:gl
+  needs: []
+
+pages:
+  stage: deploy
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - public
+  needs:
+    - lint
+    - test
+  only:
+    - main

@@ -1,0 +1,27 @@
+type: class
+metadata:
+  id: fighter
+  name: Fighter
+  description: >
+    Lorem ipsum dolor sit amet.
+spec:
+  set:
+    hit-dice: d10
+  grant:
+    - type: proficiency
+      id: armor-light
+    - type: proficiency
+      id: armor-medium
+  select:
+    - type: proficiency
+      name: Skill Proficiency
+      number: 2 
+      id:
+        - skill-acrobatics
+        - skill-animal-handling
+        - skill-athletics
+        - skill-history
+        - skill-insight
+        - skill-intimidation
+        - skill-perception
+        - skill-survival

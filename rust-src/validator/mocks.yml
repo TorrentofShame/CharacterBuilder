@@ -1,0 +1,54 @@
+char:
+  abilities:
+    strength: 13
+    dexterity: 9
+  level: 1
+if:
+  ability: # str && dex >= 13
+    strength: 13
+    dexterity: 13
+result: false
+---
+char:
+  abilities:
+    strength: 10 
+    dexterity: 11 
+  level: 1
+if:
+  ability: # str && dex >= 10
+    strength: 10
+    dexterity: 10
+result: true
+---
+char:
+  abilities:
+    strength: 10 
+    dexterity: 11 
+  level: 1
+if:
+  ability: # str || dex >= 10
+    - strength: 10
+    - dexterity: 10
+result: true
+---
+char:
+  abilities:
+    strength: 9 
+    dexterity: 9 
+  level: 1
+if:
+  ability: # str || dex >= 10
+    - strength: 10
+    - dexterity: 10
+result: false
+---
+char:
+  abilities:
+    strength: 9 
+    dexterity: 10 
+  level: 1
+if:
+  ability: # str || dex >= 10
+    - strength: 10
+    - dexterity: 10
+result: true
