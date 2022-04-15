@@ -15,6 +15,7 @@ impl fmt::Display for ApiError {
 
 /// Fetches asset definition from an api
 pub fn fetch_asset_definition(_ty: &str, id: &str) -> Result<Asset, ApiError> {
+    // TODO: Implement
     Ok(Asset::Proficiency {
         metadata: MetaData {
             id: id.to_string(),
